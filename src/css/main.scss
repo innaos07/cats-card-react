@@ -1,0 +1,33 @@
+@import 'variables';
+
+@font-face {
+    font-family: 'Exo 2.0';
+    src: url('../fonts/Exo20-Thin.woff2') format('woff2'),
+        url('../fonts/Exo20-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('../fonts/TrebuchetMS.woff2') format('woff2'),
+        url('../fonts/TrebuchetMS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 'TrebuchetMS', sent-serif;
+    line-height: 1;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+}
