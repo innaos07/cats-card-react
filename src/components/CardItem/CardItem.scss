@@ -1,0 +1,108 @@
+@import '../../css/variables.scss';
+
+.item-card {
+  .item-card__wrap {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    min-height: 480px;
+    padding: 18px 47px;
+    border: 4px solid #1698d9;
+    border-radius:  0 12px 12px 12px;
+    clip-path: polygon(45px 0%,  100% 0%, 100% 100%, 0% 100%, 0% 45px);
+    background: #f2f2f2;
+    background-image: url(../../images/cat.png);
+    background-repeat: no-repeat;
+    background-position:  bottom left;
+    background-size: 100% 270px;
+   
+    &::before {
+      content: '';
+      position: absolute;
+      top: 19px;
+      left: -17px;
+      width: 70px;
+      height: 4px;
+      background-color: #1698d9;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .item-card__sub-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 119%;
+    color: #666666;
+  }
+
+  .item-card__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    color: #000000;
+  }
+
+  .item-card__stuffing {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000000;
+  }
+  
+  .item-card__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #666666;
+  }
+  .item-card__count {
+    font-weight: 700;
+  }
+
+  .item-card__gift--two {
+    display: block;
+  }
+
+  .item-card__weight {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1698D9; 
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    
+
+    .item-card__value {
+      font-size: 42px;
+      line-height: 1;
+      color: #FFFFFF;
+    }
+
+    .item-card__kg {
+      font-size: 20px;
+    }
+  }
+
+  .item-card__description {
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 115%;
+    text-align: center;
+    color: #FFFFFF; 
+
+    .item-card__link {
+      font: inherit;
+      color: #1698D9;
+      text-decoration: dashed underline;
+    }
+  }
+}
