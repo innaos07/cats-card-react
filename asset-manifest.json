@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cats-card-react/static/css/main.882d07e9.css",
+    "main.css": "/cats-card-react/static/css/main.a709755f.css",
     "main.js": "/cats-card-react/static/js/main.82293757.js",
     "static/media/background.jpg": "/cats-card-react/static/media/background.842c43efb4a674461e5d.jpg",
     "static/media/cat.png": "/cats-card-react/static/media/cat.1f43ff4026a2e00a879f.png",
@@ -9,11 +9,11 @@
     "static/media/Exo20-Thin.woff": "/cats-card-react/static/media/Exo20-Thin.8228a20e90356f1e4142.woff",
     "static/media/Exo20-Thin.woff2": "/cats-card-react/static/media/Exo20-Thin.f879405925fd30395bb2.woff2",
     "index.html": "/cats-card-react/index.html",
-    "main.882d07e9.css.map": "/cats-card-react/static/css/main.882d07e9.css.map",
+    "main.a709755f.css.map": "/cats-card-react/static/css/main.a709755f.css.map",
     "main.82293757.js.map": "/cats-card-react/static/js/main.82293757.js.map"
   },
   "entrypoints": [
-    "static/css/main.882d07e9.css",
+    "static/css/main.a709755f.css",
     "static/js/main.82293757.js"
   ]
 }
