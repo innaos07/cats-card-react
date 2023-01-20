@@ -1,5 +1,5 @@
 import CardList from "../CardList/CardList";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.scss";
 
 function App() {
@@ -19,7 +19,8 @@ function App() {
       description: "Печень утки разварная с артишоками.",
       isActive: false,
       isDefault: false,
-      link: '#'
+      link: '#',
+      img: 'cat',
     },
     {
       id: 2,
@@ -34,10 +35,11 @@ function App() {
       },
       portionCount: 40,
       weight: "2",
-      description: "Головы щучьи с чесноком да свежайшая сёмгушка.",
-      isActive: false,
+      description: "Головы щучьи с чесноком да свежайшая сёмгушка",
+      isActive: true,
       isDefault: false,
-      link: '#'
+      link: '#',
+      img: 'cat',
     },
     {
       id: 3,
@@ -54,16 +56,25 @@ function App() {
       weight: "5",
       description: "Филе из цыплят с трюфелями в бульоне.",
       isActive: false,
-      isDefault: false,
-      link: '#'
+      isDefault: true,
+      link: '#',
+      img: 'cat',
     },
   ]);
+
+  const toggleIsActive =(id)=> {
+    setProductList([
+      ...productList.map(product => {
+        return product.id === id && !product.isDefault ? {...product, isActive: !product.isActive} : {...product};
+      })
+    ])
+  }
 
   return (
     <div className="app">
         <div className="app__wrap">
           <h1 className="app__title">Ты сегодня покормил кота?</h1>
-          <CardList productList={productList} />
+          <CardList productList={productList} toggleIsActive={toggleIsActive} />
         </div>
     </div>
   );
