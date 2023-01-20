@@ -2,13 +2,10 @@
 
 .card__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: 80px;
-
-  @media (max-width: $xl-width) {
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 30px;
-  }
+  row-gap: 30px;
 
   @media (max-width: $md-width) {
     flex-direction: column;

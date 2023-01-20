@@ -60,6 +60,7 @@ function App() {
       link: '#',
       img: 'cat',
     },
+    
   ]);
 
   const toggleIsActive =(id)=> {
