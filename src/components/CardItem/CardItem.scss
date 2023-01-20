@@ -54,9 +54,12 @@
   }
 
   .item-card__content { 
-    position: relative;  
+    position: relative; 
+    display: flex;
+    flex-direction: column;
     max-width: 280px;
     margin-top: -41px;
+    word-wrap: break-word;
     z-index: 1000;
   }
 
